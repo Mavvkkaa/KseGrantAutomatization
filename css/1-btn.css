@@ -1,0 +1,69 @@
+.btn {
+    --color: var(--color-white);
+    --bg: var(--color-primary);
+    --fz: 16px;
+    --w: 30px;
+    --h: 46px;
+    --bdrs: var(--bdrs-lg);
+    --padding: 0 20px;
+    --icon-gap: 5px;
+    --hover-bg: var(--color-primary-hover);
+    --hover-color: var(--color-white);
+
+    background-color: var(--bg);
+    color: var(--color);
+    border-radius: var(--bdrs);
+    min-width: var(--w);
+    min-height: var(--h);
+    padding: var(--padding);
+    font-size: var(--fz);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--icon-gap);
+    border: none;
+    position: relative;
+    cursor: pointer;
+    font-weight: 500;
+    transition: .25s;
+}
+
+.btn:hover {
+    background-color: var(--hover-bg);
+    color: var(--hover-color);
+}
+
+.btn:disabled {
+    opacity: .25;
+}
+
+.btn-ghost {
+    --color: var(--color-primary);
+    --bg: transition;
+}
+
+.btn-xxs {
+    --bdrs: var(--bdrs-xxs);
+    --padding: 0;
+    --fz: 10px;
+    --h: 21px;
+}
+
+.btn-xsm {
+    --fz: 14px;
+    --h: 32px;
+}
+
+.btn-sm {
+    --fz: 14px;
+    --h: 42px;
+}
+
+.btn-icon {
+    --padding: 0 0;
+    --w: var(--h);
+}
+
+.btn-circle {
+    --bdrs: 50%;
+}
