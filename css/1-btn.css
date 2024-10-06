@@ -4,8 +4,8 @@
     --fz: 16px;
     --w: 30px;
     --h: 46px;
-    --bdrs: var(--bdrs-lg);
-    --padding: 0 20px;
+    --bdrs: var(--bdrs-xlg);
+    --padding: 0 25px;
     --icon-gap: 5px;
     --hover-bg: var(--color-primary-hover);
     --hover-color: var(--color-white);
@@ -38,6 +38,11 @@
     --bg: transition;
 }
 
+.btn-white {
+    --color: var(--color-primary);
+    --bg: var(--color-grey-light);
+}
+
 .btn-icon {
     --padding: 0 0;
     --w: var(--h);
@@ -45,4 +50,11 @@
 
 .btn-round {
     border-radius: 50px;
+}
+
+.btn-xl {
+    --h: 60px;
+    --fz: 18px;
+    --bdrs: calc(var(--bdrs-xlg) * 2);
+    --padding: 0 35px;
 }
