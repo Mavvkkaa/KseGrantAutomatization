@@ -5,9 +5,13 @@
 .nav .logo {
     font-weight: 700;
     font-size: 24px;
-    color: var(--color-primary);
+    color: var(--color-black);
     margin-right: 80px;
     margin-top: -5px;
+}
+
+.nav .logo:hover {
+    color: var(--color-primary-hover);
 }
 
 .nav .nav-ul {
@@ -17,7 +21,7 @@
 .nav .nav-li {}
 
 .nav .nav-link {
-    color: var(--color-primary);
+    color: var(--color-black);
     font-size: 14px;
 }
 
@@ -29,4 +33,6 @@
 
 .nav .nav-btn-li {}
 
-.nav .nav-btn-link {}
+.nav .nav-btn-link {
+    font-size: 14px;
+}

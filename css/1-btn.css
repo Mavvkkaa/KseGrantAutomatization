@@ -34,11 +34,15 @@
 }
 
 .btn-ghost {
-    --color: var(--color-primary);
+    --color: var(--color-blue);
     --bg: transition;
 }
 
 .btn-icon {
     --padding: 0 0;
     --w: var(--h);
+}
+
+.btn-round {
+    border-radius: 50px;
 }
