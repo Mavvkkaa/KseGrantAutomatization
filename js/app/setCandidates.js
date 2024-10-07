@@ -17,9 +17,10 @@ export async function setCandidates() {
 
         // Отримуємо дані з сервера
         const vacancyList = await getData(`${apiUrl.students}?vacancyid=${id}&rejected=no`);
+        console.log("vacancyList: ", vacancyList);
 
         // Перевіряємо масив на пустоту
-        if (!isDataExist(vacancyList)) {
+        if (vacancyList == undefined) {
 
             // Відображаємо пустий стейт
             boxVacancyList.innerHTML = setEmptyState('Поки немає кандидатів...');

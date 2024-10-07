@@ -8,6 +8,10 @@
 	transition: 0.3s;
 }
 
+.card-item * {
+	pointer-events: none;
+}
+
 .card-item .card-item-title-holder {
 	padding: 25px;
 	justify-content: flex-end;

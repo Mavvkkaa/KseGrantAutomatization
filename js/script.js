@@ -2,10 +2,11 @@ import { addStudent } from './app/addStudent.js';
 import { addVacancy } from './app/addVacancy.js';
 import { callVacancy } from './app/callVacancy.js';
 import { delStudent } from './app/delStudent.js';
+import { filterVacancy } from './app/filterVacancy.js';
 import { setCandidates } from './app/setCandidates.js';
 import { viewInfoVacancy } from './app/viewInfoVacancy.js';
 import { viewVacancy } from './app/viewVacancy.js';
-import { body, boxVacancyList, formAddStudent, formAddVacancy, modalCallVacancy } from './utils/elements.js';
+import { body, boxVacancyList, btnsFilterVacancy, formAddStudent, formAddVacancy, modalCallVacancy } from './utils/elements.js';
 import { setModals } from './utils/modal.js';
 
 
@@ -33,6 +34,11 @@ switch (page) {
 
         // Оживляємо кнопку "відгукнутися на вакансію"
         modalCallVacancy.addEventListener('click', callVacancy)
+
+        // Слідкуємо за кліком філтру
+        btnsFilterVacancy.forEach(btnFilter => {
+            btnFilter.addEventListener('click', filterVacancy)
+        });
         break;
 
     case 'candidates':
