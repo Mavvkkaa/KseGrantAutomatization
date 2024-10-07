@@ -2,7 +2,6 @@ import { apiUrl } from "../utils/getData.js";
 import { viewVacancy } from "./viewVacancy.js";
 
 export function filterVacancy(e) {
-    e.preventDefault();
 
     // Відбираємо ключ фільтру
     const key = e.target.getAttribute('data-filter-vacancy');
